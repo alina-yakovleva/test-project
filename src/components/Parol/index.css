@@ -13,7 +13,7 @@
 }
 .input {
   padding: 5px 10px;
-  width: 336px;
+  min-width: 336px;
   height: 31px;
   border: 1px solid #999999;
   box-sizing: border-box;
@@ -21,7 +21,7 @@
 
 .repeat-parol {
   display: flex;
-  gap: 55px;
+  gap: 58px;
   margin-top: 37px;
 }
 
@@ -40,8 +40,10 @@
   font-size: 12px;
   line-height: 20px;
   color: #999999;
+  max-width: 291px;
 }
 .active {
+  min-width: 336px;
   border-color: red;
 }
 .error {
