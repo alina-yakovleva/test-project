@@ -1,7 +1,6 @@
-import { findByLabelText } from "@testing-library/react";
 import { useState } from "react";
 import "./index.css";
-const Parol = ({ type, parol, onChange }) => {
+const Password = ({ type, parol, onChange }) => {
   const [value1, setValue1] = useState(parol);
   const [value2, setValue2] = useState(parol);
   const [isActive, setActive] = useState(true);
@@ -23,8 +22,8 @@ const Parol = ({ type, parol, onChange }) => {
   };
 
   return (
-    <div className="parol">
-      <div className="parol create-parol">
+    <div className="password">
+      <div className="password create-password">
         <div>Пароль</div>
         <div style={{ display: "flex", gap: "30px", alignItems: "center" }}>
           <input
@@ -33,7 +32,7 @@ const Parol = ({ type, parol, onChange }) => {
             value={value1}
             type={type}
           />
-          <span className="parol helper-text-1">
+          <span className="password helper-text-1">
             Ваш новый пароль должен содержать не менее 5 символов.
           </span>
         </div>
@@ -41,7 +40,7 @@ const Parol = ({ type, parol, onChange }) => {
       {(!value1 && <span className="error">Укажите пароль</span>) ||
         (hasErrorLength1 && <span className="error">Неверный пароль</span>)}
 
-      <div className="parol repeat-parol">
+      <div className="password repeat-password">
         <div>Пароль еще раз</div>
         <div
           style={{
@@ -57,7 +56,7 @@ const Parol = ({ type, parol, onChange }) => {
             type={type}
           />
 
-          <span className="parol helper-text-2">
+          <span className="password helper-text-2">
             Повторите пароль, пожалуйста, это обезопасит вас с нами на случай
             ошибки.
           </span>
@@ -71,4 +70,4 @@ const Parol = ({ type, parol, onChange }) => {
     </div>
   );
 };
-export default Parol;
+export default Password;

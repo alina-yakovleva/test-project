@@ -1,9 +1,9 @@
-.create-parol {
+.create-password {
   display: flex;
   gap: 142px;
   align-items: center;
 }
-.parol div {
+.password div {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -19,13 +19,13 @@
   box-sizing: border-box;
 }
 
-.repeat-parol {
+.repeat-password {
   display: flex;
   gap: 58px;
   margin-top: 37px;
 }
 
-.parol .helper-text-1 {
+.password .helper-text-1 {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -33,7 +33,7 @@
   line-height: 20px;
   color: #999999;
 }
-.parol .helper-text-2 {
+.password .helper-text-2 {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;

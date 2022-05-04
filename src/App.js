@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import "./index.css";
 import {
   getUniversitiesAsync,
   setSelectedCity,
@@ -15,10 +14,11 @@ import UniversitySelect from "./components/UniversitySelect";
 import CitySelect from "./components/CitySelect";
 
 import GreyBox from "./components/GreyBox";
-import Parol from "./components/Parol";
 import Email from "./components/Email";
 import CheckBox from "./components/CheckBox";
+import Password from "./components/Password";
 
+import "./index.css";
 function App() {
   const selectedUniversity = useSelector((state) => state.selectedUniversity);
   const selectedCity = useSelector((state) => state.selectedCity);
@@ -114,7 +114,7 @@ function App() {
             items={universities}
           />
           <hr />
-          <Parol parol={parol} type={"password"} onChange={onChangeParol} />
+          <Password parol={parol} type={"password"} onChange={onChangeParol} />
           <hr />
           <Email email={email} onChange={onChangeEmail} />
           <CheckBox completed={completed} onChange={onChangeCheckBox} />
