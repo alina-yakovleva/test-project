@@ -1,0 +1,46 @@
+.email {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.email div {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 19px;
+  color: #000000;
+}
+.input {
+  padding: 5px 10px;
+  width: 336px;
+  height: 31px;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+}
+.active {
+  padding: 5px 10px;
+  width: 336px;
+  height: 31px;
+  border-color: red;
+
+  box-sizing: border-box;
+}
+
+.email .helper-text {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #999999;
+}
+.error {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ff0000;
+  margin-left: 225px;
+}

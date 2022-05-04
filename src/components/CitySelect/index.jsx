@@ -1,4 +1,5 @@
 import cities from "../../cities.json";
+import "./index.css";
 
 const CitySelect = ({ value, onChange }) => {
   const filteredCities = cities.filter((city) => city.population > 50000);
@@ -17,26 +18,20 @@ const CitySelect = ({ value, onChange }) => {
       return 0;
     });
   return (
-    <select
-      className="select"
-      value={value}
-      onChange={(e) => onChange(e.target.value)}
-    >
-      <option value="" disabled>
-        Выберите город
-      </option>
-      {largePopulationCity && (
-        <option>
-          {largePopulationCity.city}-{largePopulationCity.population}
-        </option>
-      )}
+    <div className="city-select">
+      <div>Ваш город</div>
+      <select
+        className="select"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+      >
+        {largePopulationCity && <option>{largePopulationCity.city}</option>}
 
-      {sortedCities.map((city) => (
-        <option key={city.city}>
-          {city.city}-{city.population}
-        </option>
-      ))}
-    </select>
+        {sortedCities.map((city) => (
+          <option key={city.city}>{city.city}</option>
+        ))}
+      </select>
+    </div>
   );
 };
 export default CitySelect;

@@ -1,4 +1,7 @@
 import {
+  SET_COMPLETED,
+  SET_EMAIL,
+  SET_PAROL,
   SET_SELECTED_CITY,
   SET_SELECTED_UNIVERSITY,
   SET_STATUS,
@@ -9,7 +12,10 @@ const initialState = {
   universities: [],
   selectedUniversity: "",
   selectedCity: "",
-  status: "",
+  status: "Прежде чем действовать, надо понять",
+  parol: "",
+  email: "",
+  completed: false,
 };
 
 export const reducer = (state = initialState, action) => {
@@ -31,6 +37,15 @@ export const reducer = (state = initialState, action) => {
     }
     case SET_STATUS: {
       return { ...state, status: action.payload };
+    }
+    case SET_PAROL: {
+      return { ...state, parol: action.payload };
+    }
+    case SET_EMAIL: {
+      return { ...state, email: action.payload };
+    }
+    case SET_COMPLETED: {
+      return { ...state, completed: action.payload };
     }
     default:
       return state;

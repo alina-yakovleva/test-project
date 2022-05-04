@@ -1,0 +1,31 @@
+.university-select {
+  display: flex;
+  gap: 52px;
+  align-items: center;
+}
+.university-select div {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 19px;
+  color: #000000;
+}
+.university-select select {
+  appearance: none;
+  padding: 5px 29px;
+  padding-left: 10px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACkSURBVHgBjdDRCcIwEAbgu4vdxwUsvnUIKXaOFml80DVUEJxAQn0TJ3ADF/HOXqsgaRP6Q+DI3ZeQALRJ6tscJiYpr92smVXOCsOF0vwlj/MzijauYCBn0hUSC0m/LUdTNesoYjxorQa1oLKpEcX2I1i8d9kphETQ8j7b4q8ZwmOom/g/2cdEjGNoAIf4+3oPaYwP25+94yIHRFiGUDR6s65Q/wNYr1t3iVHrzwAAAABJRU5ErkJggg==)
+    no-repeat right;
+  max-width: 336px;
+  height: 31px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-overflow: ellipsis;
+  background-position: calc(100% - 12px) center;
+  cursor: pointer;
+}

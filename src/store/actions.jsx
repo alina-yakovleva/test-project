@@ -1,5 +1,8 @@
 import { getUniversity } from "../api/university";
 import {
+  SET_COMPLETED,
+  SET_EMAIL,
+  SET_PAROL,
   SET_SELECTED_CITY,
   SET_SELECTED_UNIVERSITY,
   SET_STATUS,
@@ -33,4 +36,17 @@ export const setSelectedCity = (selected) => ({
 export const setStatus = (value) => ({
   type: SET_STATUS,
   payload: value,
+});
+
+export const setParol = (value) => ({
+  type: SET_PAROL,
+  payload: value,
+});
+export const setEmail = (value) => ({
+  type: SET_EMAIL,
+  payload: value,
+});
+export const setCompleted = (completed) => ({
+  type: SET_COMPLETED,
+  payload: completed,
 });

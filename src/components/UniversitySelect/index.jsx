@@ -1,17 +1,15 @@
+import "./index.css";
+
 const UniversitySelect = ({ value, onChange, items }) => {
   return (
-    <select
-      className="select"
-      value={value}
-      onChange={(e) => onChange(e.target.value)}
-    >
-      <option value="" disabled>
-        Выберите университет
-      </option>
-      {items.map((university) => (
-        <option>{university.name}</option>
-      ))}
-    </select>
+    <div className="university-select">
+      <div>Ваш университет</div>
+      <select value={value} onChange={(e) => onChange(e.target.value)}>
+        {items.map((university) => (
+          <option>{university.name}</option>
+        ))}
+      </select>
+    </div>
   );
 };
 export default UniversitySelect;

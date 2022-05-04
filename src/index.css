@@ -1,48 +1,99 @@
-.App {
-  border: 3px dashed rgb(0, 153, 255);
-  max-width: 700px;
-  padding: 20px;
-  margin: 15px auto;
-  font-size: 18px;
+.wrap {
+  max-width: 1169px;
+  height: 869px;
+  padding: 104px 90px;
+  background: #ffffff;
 }
-.select {
-  font-size: 20px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.main-button {
-  background-color: rgb(0, 153, 255);
-  border: 1px solid rgb(0, 153, 255);
-  font-size: 22px;
-  padding: 5px;
-  color: white;
-}
-.main-button:hover {
-  background-color: white;
-  color: rgb(7, 137, 224);
-}
-button {
-  font-size: 18px;
-  border: 1px solid rgb(215, 217, 218);
-  background-color: white;
-  padding: 5px;
-}
-button:hover {
-  background-color: rgb(236, 231, 231);
-}
-select {
-  width: 100%;
-}
-.input {
+.wrap__title {
   display: flex;
-  gap: 5px;
+  gap: 128px;
+  align-items: center;
+}
+.wrap__title-title {
+  display: flex;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 34px;
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.wrap__title_change-status {
+  cursor: pointer;
+  color: #0c77bb;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+}
+.wrap__title_change-status:hover {
+  text-decoration: underline dotted;
 }
 .grey-box {
-  background-color: rgb(169, 169, 169);
-  width: 150px;
+  margin-left: 224px;
+  margin-top: 5px;
+}
+.square {
+  position: absolute;
+  top: 146px;
+  left: 331px;
+  border: 1px solid #eaeaea;
+  background-color: #eaeaea;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+}
+.box {
+  padding: 10px;
+  position: relative;
+  border: 1px solid #eaeaea;
+  background-color: #eaeaea;
+  max-width: 503px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.grey-box span {
+  position: absolute;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  left: 100px;
+  margin: 19px 144px 8px 12px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #e5e4e4;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 37px;
+  gap: 37px;
+  padding: 0 8px;
+}
+.button {
+  margin-left: 232px;
+  display: flex;
+  align-items: center;
+}
+.main-button {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  width: 119px;
+  height: 40px;
+  background: #71c838;
+  border: 1px solid #71c838;
+  box-shadow: 0px 1px 0px #539d22;
+  height: 20px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 17px;
+  color: #ffffff;
 }

@@ -1,0 +1,50 @@
+.create-parol {
+  display: flex;
+  gap: 142px;
+  align-items: center;
+}
+.parol div {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 19px;
+  color: #000000;
+}
+.input {
+  padding: 5px 10px;
+  width: 336px;
+  height: 31px;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+}
+
+.repeat-parol {
+  display: flex;
+  gap: 55px;
+  margin-top: 37px;
+}
+
+.parol .helper-text-1 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #999999;
+}
+.parol .helper-text-2 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #999999;
+}
+.active {
+  border-color: red;
+}
+.error {
+  color: #ff0000;
+  margin-left: 225px;
+}
